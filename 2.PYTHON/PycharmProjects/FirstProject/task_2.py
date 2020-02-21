@@ -1,20 +1,26 @@
 # Task-1
 def zd1_nat(nat, word, ch_word):
     print("Old string:", nat)
-    print("New string:", nat.replace(word, ch_word))
+    nat = nat.replace(word, ch_word)
+    print("New string:", end=" ")
+    return nat
 
 
 # Task-2
 def zd2_mac(mac, sb, ch_sb):
     print('Old string:', mac)
-    print('New string:', mac.replace(sb, ch_sb) + ' ' + mac.replace(sb, ch_sb))
+    mac = mac.replace(sb, ch_sb) + ' ' + mac.replace(sb, ch_sb)
+    print('New string:', end=" ")
+    return mac
 
 
 # Task-3
 def zd3_vlan(config):
     print('Old string:', config)
     razb = config.split()
-    print('New string:', razb[-1].split(','))
+    razb = razb[-1].split(',')
+    print('New string:', end=" ")
+    return razb
 
 
 # Task-4
@@ -71,18 +77,21 @@ def zd8_ip(ip):
 
 
 print("---------------------------------------TASK-1---------------------------------------")
-zd1_nat("ip nat inside source list ACL interface FastEthernet0/1 overload", "Fast", "Gigabit")
-print("\n---------------------------------------TASK-2---------------------------------------")
-zd2_mac('AAAA:BBBB:CCCC', ':', '.')
-print("\n---------------------------------------TASK-3---------------------------------------")
-zd3_vlan('switchport trunk allowed vlan 1,3,10,20,30,100')
-print("\n---------------------------------------TASK-4---------------------------------------")
-zd4_sort_vlan([10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10])
-print("\n---------------------------------------TASK-5---------------------------------------")
-zd5_same_vlan('switchport trunk allowed vlan 1,2,3,5,8', 'switchport trunk allowed vlan 1,3,8,9')
-print("\n---------------------------------------TASK-6---------------------------------------")
-zd6_form_vuvod('O 10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0')
-print("\n---------------------------------------TASK-7---------------------------------------")
-zd7_preobr('AAAA:BBBB:CCCC')
-print("\n---------------------------------------TASK-8---------------------------------------")
-zd8_ip('192.168.3.1')
+zd_1 = zd1_nat("ip nat inside source list ACL interface FastEthernet0/1 overload", "Fast", "Gigabit")
+print(zd_1)
+# print("\n---------------------------------------TASK-2---------------------------------------")
+# zd_2 = zd2_mac('AAAA:BBBB:CCCC', ':', '.')
+# print(zd_2)
+# print("\n---------------------------------------TASK-3---------------------------------------")
+# zd_3 = zd3_vlan('switchport trunk allowed vlan 1,3,10,20,30,100')
+# print(zd_3)
+# print("\n---------------------------------------TASK-4---------------------------------------")
+# zd4_sort_vlan([10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10])
+# print("\n---------------------------------------TASK-5---------------------------------------")
+# zd5_same_vlan('switchport trunk allowed vlan 1,2,3,5,8', 'switchport trunk allowed vlan 1,3,8,9')
+# print("\n---------------------------------------TASK-6---------------------------------------")
+# zd6_form_vuvod('O 10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0')
+# print("\n---------------------------------------TASK-7---------------------------------------")
+# zd7_preobr('AAAA:BBBB:CCCC')
+# print("\n---------------------------------------TASK-8---------------------------------------")
+# zd8_ip('192.168.3.1')

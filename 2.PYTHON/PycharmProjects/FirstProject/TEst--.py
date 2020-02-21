@@ -19,13 +19,15 @@
 
 
 
-def zd8_ip(ip):
-    print("Inserted ip: ", ip)
-    ip = ip.split('.')
-    a, b, c, d = ip
-    ip = '{0:<8} {1:<8} {2:<8} {3:<8}'.format(int(a), int(b), int(c), int(d))
-    bip = '{:08b} {:08b} {:08b} {:08b}'.format(int(a), int(b), int(c), int(d))
-    print(ip)
-    print(bip)
+# Task-3
+def zd3_vlan(config):
+    print('Old string:', config)
+    razb = config.split()
+    razb = razb[-1].split(',')
+    print('New string:', end=" ")
+    return razb
 
-zd8_ip('192.168.3.1')
+
+zd_3 = zd3_vlan('switchport trunk allowed vlan 1,3,10,20,30,100')
+print(zd_3)
+
