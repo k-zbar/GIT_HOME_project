@@ -1,0 +1,491 @@
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT
+$ git clone git@git.epam.com:kyrylo_zbarazhskyi/my-second-project.git
+Cloning into 'my-second-project'...
+warning: You appear to have cloned an empty repository.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT
+$ ls
+'Additional information'/   my-first-project/   my-second-project/   Task-1/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT
+$ cd my-second-project/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ touch .gitignore
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ git commit -m "Init commmit"
+[master (root-commit) 26b3a7e] Init commmit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ git branch
+* master
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (dev)
+$ git branch
+* dev
+  master
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (dev)
+$ mkdir "task2-git-practise-2"
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (dev)
+$ cd task2-git-practise-2/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ touch 1.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git add .
+
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git commit -m "Added 1.txt"
+[dev 86efa51] Added 1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/1.txt
+
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git branch first
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git branch
+* dev
+  first
+  master
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git branch second
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git branch
+* dev
+  first
+  master
+  second
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ touch 2.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git commit -m "Added 2.txt"
+[dev 40f6552] Added 2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/2.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ touch 3.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git commit -m "Added 3.txt"
+[dev 64ce124] Added 3.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/3.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ ls
+1.txt  2.txt  3.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ vim 2.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ vim 3.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git add .
+warning: LF will be replaced by CRLF in task2-git-practise-2/2.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in task2-git-practise-2/3.txt.
+The file will have its original line endings in your working directory
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   2.txt
+        modified:   3.txt
+
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git commit -m "Changed 2.txt and 3.txt"
+[dev 87055c3] Changed 2.txt and 3.txt
+ 2 files changed, 2 insertions(+)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git checkout first
+Switched to branch 'first'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ ls
+1.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ touch 4.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ touch 5.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ touch 6.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ touch 7.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ touch 8.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git add 4.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git commit -m "Added 4.txt"
+[first acc4881] Added 4.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/4.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git add 5.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git commit -m "Added 5.txt"
+[first 2223c44] Added 5.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/5.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git add 6.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git commit -m "Added 6.txt"
+[first dc907b1] Added 6.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/6.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git add 7.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git commit -m "Added 7.txt"
+[first 04c9cd7] Added 7.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/7.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git add 8.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git commit -m "Added 8.txt"
+[first f15bc5e] Added 8.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/8.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git status
+On branch first
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git checkout second
+Switched to branch 'second'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ touch 9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ touch 10.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git add 9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git commit -m "Added 9.txt"
+[second 4222790] Added 9.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git add 10.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git commit -m "Added 10.txt"
+[second 34086be] Added 10.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/10.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ touch 11.txt 12.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git add 11.txt 12.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git commit -m "Added 11.txt and added 12.txt"
+[second feb895f] Added 11.txt and added 12.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/11.txt
+ create mode 100644 task2-git-practise-2/12.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git status
+On branch second
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ ls
+1.txt  10.txt  11.txt  12.txt  9.txt
+
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git rebase -i dev
+Stopped at 4222790...  Added 9.txt
+You can amend the commit now, with
+
+  git commit --amend
+
+Once you are satisfied with your changes, run
+
+  git rebase --continue
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 1/3)
+$ nano 9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 1/3)
+$ git add 9.txt
+warning: LF will be replaced by CRLF in task2-git-practise-2/9.txt.
+The file will have its original line endings in your working directory
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 1/3)
+$ git commit --amend
+[detached HEAD 90d4f32] Added 9.txt and 123
+ Date: Wed Jan 22 13:06:19 2020 +0200
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task2-git-practise-2/9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 1/3)
+$ git status
+interactive rebase in progress; onto 87055c3
+Last command done (1 command done):
+   edit 4222790 Added 9.txt
+Next commands to do (2 remaining commands):
+   pick 34086be Added 10.txt
+   edit feb895f Added 11.txt and added 12.txt
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'second' on '87055c3'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 1/3)
+$ git rebase --continue
+Stopped at feb895f...  Added 11.txt and added 12.txt
+You can amend the commit now, with
+
+  git commit --amend
+
+Once you are satisfied with your changes, run
+
+  git rebase --continue
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 3/3)
+$ git reset HEAD^
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 3/3)
+$ git add 11.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 3/3)
+$ git commit -m "Added 11.txt"
+[detached HEAD dfb6f85] Added 11.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/11.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 3/3)
+$ git add 12.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 3/3)
+$ git commit -m "and added 12.txt"
+[detached HEAD 64e56e6] and added 12.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/12.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second|REBASE-i 3/3)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/second.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ ls
+1.txt  10.txt  11.txt  12.txt  2.txt  3.txt  9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ ls
+1.txt  2.txt  3.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git checkout second
+Switched to branch 'second'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ ls
+1.txt  10.txt  11.txt  12.txt  2.txt  3.txt  9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ cat 9.txt
+123
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (second)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git merge second
+Updating 87055c3..64e56e6
+Fast-forward
+ task2-git-practise-2/10.txt | 0
+ task2-git-practise-2/11.txt | 0
+ task2-git-practise-2/12.txt | 0
+ task2-git-practise-2/9.txt  | 1 +
+ 4 files changed, 1 insertion(+)
+ create mode 100644 task2-git-practise-2/10.txt
+ create mode 100644 task2-git-practise-2/11.txt
+ create mode 100644 task2-git-practise-2/12.txt
+ create mode 100644 task2-git-practise-2/9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git checkout first
+Switched to branch 'first'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git rebase -i dev
+[detached HEAD ae9164d] Added 6.txt, 7.txt and 8.txt
+ Date: Wed Jan 22 13:04:09 2020 +0200
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/6.txt
+ create mode 100644 task2-git-practise-2/7.txt
+ create mode 100644 task2-git-practise-2/8.txt
+Successfully rebased and updated refs/heads/first.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (first)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git merge first
+Updating 64e56e6..ae9164d
+Fast-forward
+ task2-git-practise-2/5.txt | 0
+ task2-git-practise-2/6.txt | 0
+ task2-git-practise-2/7.txt | 0
+ task2-git-practise-2/8.txt | 0
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task2-git-practise-2/5.txt
+ create mode 100644 task2-git-practise-2/6.txt
+ create mode 100644 task2-git-practise-2/7.txt
+ create mode 100644 task2-git-practise-2/8.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2 (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2
+$ git merge dev
+fatal: failed to stat 'C:/Users/Kyrylo_Zbarazhskyi/!Lessons/1.GIT/my-second-project/task2-git-practise-2': Permission denied
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project/task2-git-practise-2
+$ cd ..
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ git merge dev
+Updating 26b3a7e..ae9164d
+Fast-forward
+ task2-git-practise-2/1.txt  | 0
+ task2-git-practise-2/10.txt | 0
+ task2-git-practise-2/11.txt | 0
+ task2-git-practise-2/12.txt | 0
+ task2-git-practise-2/2.txt  | 1 +
+ task2-git-practise-2/3.txt  | 1 +
+ task2-git-practise-2/5.txt  | 0
+ task2-git-practise-2/6.txt  | 0
+ task2-git-practise-2/7.txt  | 0
+ task2-git-practise-2/8.txt  | 0
+ task2-git-practise-2/9.txt  | 1 +
+ 11 files changed, 3 insertions(+)
+ create mode 100644 task2-git-practise-2/1.txt
+ create mode 100644 task2-git-practise-2/10.txt
+ create mode 100644 task2-git-practise-2/11.txt
+ create mode 100644 task2-git-practise-2/12.txt
+ create mode 100644 task2-git-practise-2/2.txt
+ create mode 100644 task2-git-practise-2/3.txt
+ create mode 100644 task2-git-practise-2/5.txt
+ create mode 100644 task2-git-practise-2/6.txt
+ create mode 100644 task2-git-practise-2/7.txt
+ create mode 100644 task2-git-practise-2/8.txt
+ create mode 100644 task2-git-practise-2/9.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ j
+bash: j: command not found
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)
+$ git push origin --all
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (35/35), 3.14 KiB | 535.00 KiB/s, done.
+Total 35 (delta 8), reused 0 (delta 0)
+remote:
+remote: To create a merge request for dev, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-second-project/merge_requests/new?merge_request%5Bsource_branch%5D=dev
+remote:
+remote: To create a merge request for first, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-second-project/merge_requests/new?merge_request%5Bsource_branch%5D=first
+remote:
+remote: To create a merge request for second, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-second-project/merge_requests/new?merge_request%5Bsource_branch%5D=second
+remote:
+To git.epam.com:kyrylo_zbarazhskyi/my-second-project.git
+ * [new branch]      dev -> dev
+ * [new branch]      first -> first
+ * [new branch]      master -> master
+ * [new branch]      second -> second
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-second-project (master)

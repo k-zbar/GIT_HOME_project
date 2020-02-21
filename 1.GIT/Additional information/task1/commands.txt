@@ -1,0 +1,376 @@
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT
+$ git clone git@git.epam.com:kyrylo_zbarazhskyi/my-first-project.git
+Cloning into 'my-first-project'...
+warning: You appear to have cloned an empty repository.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT
+$ cd my-first-project/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ touch 123.log
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ touch .gitignore
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ git commit -m "Added .gitignore"
+[master (root-commit) c5646d6] Added .gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ mkdir "task1-git-practise-1"
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ ls
+123.log  task1-git-practise-1/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project (master)
+$ cd task1-git-practise-1/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ ls
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ touch readme.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git commit -m "Added readme.txt"
+[master 90ca794] Added readme.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task1-git-practise-1/readme.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ touch index.html
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git commit -m "Added index.html"
+[dev 7922c4d] Added index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task1-git-practise-1/index.html
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout -b images
+Switched to a new branch 'images'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git status
+On branch images
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git commit -m "Added images"
+[images 449b47e] Added images
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task1-git-practise-1/images/5ca71ab61f000058017f15df.jpg
+ create mode 100644 task1-git-practise-1/images/960x0.jpg
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git status
+On branch images
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git commit -m "Added images source"
+[images cad8dc5] Added images source
+ 1 file changed, 13 insertions(+)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout -b styles
+Switched to a new branch 'styles'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git status
+On branch styles
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git commit -m "Added styles"
+[styles 0c6836f] Added styles
+ 1 file changed, 5 insertions(+)
+ create mode 100644 task1-git-practise-1/styles/styles.css
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git status
+On branch styles
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git commit -m "Changed index.html"
+[styles 6a840d7] Changed index.html
+ 1 file changed, 13 insertions(+)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git merge images
+Updating 7922c4d..cad8dc5
+Fast-forward
+ .../images/5ca71ab61f000058017f15df.jpg                 | Bin 0 -> 40838 bytes
+ task1-git-practise-1/images/960x0.jpg                   | Bin 0 -> 71958 bytes
+ task1-git-practise-1/index.html                         |  13 +++++++++++++
+ 3 files changed, 13 insertions(+)
+ create mode 100644 task1-git-practise-1/images/5ca71ab61f000058017f15df.jpg
+ create mode 100644 task1-git-practise-1/images/960x0.jpg
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git merge styles
+Merge made by the 'recursive' strategy.
+ task1-git-practise-1/styles/styles.css | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 task1-git-practise-1/styles/styles.css
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git merge dev
+Updating 90ca794..7b1d3d3
+Fast-forward
+ .../images/5ca71ab61f000058017f15df.jpg                 | Bin 0 -> 40838 bytes
+ task1-git-practise-1/images/960x0.jpg                   | Bin 0 -> 71958 bytes
+ task1-git-practise-1/index.html                         |  13 +++++++++++++
+ task1-git-practise-1/styles/styles.css                  |   5 +++++
+ 4 files changed, 18 insertions(+)
+ create mode 100644 task1-git-practise-1/images/5ca71ab61f000058017f15df.jpg
+ create mode 100644 task1-git-practise-1/images/960x0.jpg
+ create mode 100644 task1-git-practise-1/index.html
+ create mode 100644 task1-git-practise-1/styles/styles.css
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout -b images2
+Switched to a new branch 'images2'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git commit -m "Added images2"
+[images2 86bce85] Added images2
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task1-git-practise-1/images2/105992231-1561667465295gettyimages-521697453.jpg
+ create mode 100644 task1-git-practise-1/images2/GETTY-labrador-puppy-1120.jpg
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ ls
+images/  images2/  index.html  readme.txt  styles/
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git status
+On branch images2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git commit -m "Changed index.html"
+[images2 ffaf93a] Changed index.html
+ 1 file changed, 4 insertions(+)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout -b styles2
+Switched to a new branch 'styles2'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git commit -m "Added styles2"
+[styles2 375201e] Added styles2
+ 1 file changed, 4 insertions(+)
+ create mode 100644 task1-git-practise-1/styles2/styles2.css
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git add .
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git commit -m "Changed index.html"
+[styles2 e46f197] Changed index.html
+ 1 file changed, 4 insertions(+)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout images2
+Switched to branch 'images2'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git rebase dev
+Current branch images2 is up to date.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (images2)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git rebase images2
+First, rewinding head to replay your work on top of it...
+Fast-forwarded dev to images2.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout styles2
+Switched to branch 'styles2'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git rebase dev
+First, rewinding head to replay your work on top of it...
+Applying: Added styles2
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (styles2)
+$ git checkout dev
+Switched to branch 'dev'
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git rebase styles2
+First, rewinding head to replay your work on top of it...
+Fast-forwarded dev to styles2.
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git merge dev
+Updating 7b1d3d3..4e11f33
+Fast-forward
+ .../105992231-1561667465295gettyimages-521697453.jpg   | Bin 0 -> 272588 bytes
+ .../images2/GETTY-labrador-puppy-1120.jpg              | Bin 0 -> 282806 bytes
+ task1-git-practise-1/index.html                        |   4 ++++
+ task1-git-practise-1/styles2/styles2.css               |   4 ++++
+ 4 files changed, 8 insertions(+)
+ create mode 100644 task1-git-practise-1/images2/105992231-1561667465295gettyimages-521697453.jpg
+ create mode 100644 task1-git-practise-1/images2/GETTY-labrador-puppy-1120.jpg
+ create mode 100644 task1-git-practise-1/styles2/styles2.css
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git reflog > GIT_Basics_homework_I.txt
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$ git push origin --all
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (46/46), 631.98 KiB | 12.64 MiB/s, done.
+Total 46 (delta 8), reused 0 (delta 0)
+remote: Checking connectivity: 46, done.
+remote:
+remote: To create a merge request for dev, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-first-project/merge_requests/new?merge_request%5Bsource_branch%5D=dev
+remote:
+remote: To create a merge request for images, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-first-project/merge_requests/new?merge_request%5Bsource_branch%5D=images
+remote:
+remote: To create a merge request for images2, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-first-project/merge_requests/new?merge_request%5Bsource_branch%5D=images2
+remote:
+remote: To create a merge request for styles, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-first-project/merge_requests/new?merge_request%5Bsource_branch%5D=styles
+remote:
+remote: To create a merge request for styles2, visit:
+remote:   https://git.epam.com/kyrylo_zbarazhskyi/my-first-project/merge_requests/new?merge_request%5Bsource_branch%5D=styles2
+remote:
+To git.epam.com:kyrylo_zbarazhskyi/my-first-project.git
+ * [new branch]      dev -> dev
+ * [new branch]      images -> images
+ * [new branch]      images2 -> images2
+ * [new branch]      master -> master
+ * [new branch]      styles -> styles
+ * [new branch]      styles2 -> styles2
+
+Kyrylo_Zbarazhskyi@EPUAKHAW016E MINGW64 ~/!Lessons/1.GIT/my-first-project/task1-git-practise-1 (master)
+$
