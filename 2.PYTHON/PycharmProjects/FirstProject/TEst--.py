@@ -19,15 +19,25 @@
 
 
 
-# Task-3
-def zd3_vlan(config):
-    print('Old string:', config)
-    razb = config.split()
-    razb = razb[-1].split(',')
-    print('New string:', end=" ")
-    return razb
+# Task-6
+def zd6_form_vuvod(ospf_route):
+    ospf_route = ospf_route.replace('O', 'OSPF')
+    fin = ospf_route.split(' ')
+    fin[4] = fin[4].replace(',', ' ')
+    fin[5] = fin[5].replace(',', ' ')
+    print("OOOO", fin[3])
+    # return fin
+    print("New strings: ")
+    print('Protocol:\t\t\t', fin[0])
+    print('Prefix:\t\t\t\t', fin[1])
+    print('AD/Metric:\t\t\t', fin[2])
+    print('Next-Hop:\t\t\t', fin[4])
+    print('Last update:\t\t', fin[5])
+    print('Outbound Interface:\t', fin[6])
 
 
-zd_3 = zd3_vlan('switchport trunk allowed vlan 1,3,10,20,30,100')
-print(zd_3)
+print("\n---------------------------------------TASK-6---------------------------------------")
+ospf_route = 'O 10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0'
+print("Inserted string: ", ospf_route)
+zd6 = zd6_form_vuvod(ospf_route)
 
