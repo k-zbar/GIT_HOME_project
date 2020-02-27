@@ -19,7 +19,7 @@ def zd6_2_ip():
             b2 = int(b2)
             b3 = int(b3)
             b4 = int(b4)
-        except:
+        except ValueError:
             print("Неправильный IP-адрес")
         else:
             if (b1 < 0) or (b1 > 255) or (b2 < 0) or (b2 > 255) or (b3 < 0) or (b3 > 255) or (b4 < 0) or (b4 > 255):
