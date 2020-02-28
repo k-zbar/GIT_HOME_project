@@ -1,17 +1,15 @@
 # Task_6.1
 def zd6_1_mac(mac):
     mac_cisco = []
-    print("Inserted string: ", mac)
     for i in mac:
         new_mac = i.replace(':', '.')
         mac_cisco.append(new_mac)
-    print("New string: ", mac_cisco)
+    return mac_cisco
 
 
 # Task_6.2
-def zd6_2_ip():
+def zd6_2_ip(ip):
     while True:
-        ip = input("Введите IP-адрес в формате 10.0.1.1: ")
         try:
             ip = ip.split('.')
             b1, b2, b3, b4, = ip
@@ -20,27 +18,26 @@ def zd6_2_ip():
             b3 = int(b3)
             b4 = int(b4)
         except ValueError:
-            print("Неправильный IP-адрес")
+            return False
         else:
             if (b1 < 0) or (b1 > 255) or (b2 < 0) or (b2 > 255) or (b3 < 0) or (b3 > 255) or (b4 < 0) or (b4 > 255):
-                print("Неправильный IP-адрес")
+                return False
             else:
-                print("Введённый IP: ", '.'.join(ip))
                 if (b1 >= 1) and (b1 <= 223):
-                    print("Unicast")
-                    break
+                    result = "Unicast"
+                    return result
                 elif (b1 >= 224) and (b1 <= 239):
-                    print("Multicast")
-                    break
+                    result = "Multicast"
+                    return result
                 elif (b1 == 255) and (b2 == 255) and (b3 == 255) and (b4 == 255):
-                    print("Local broadcast")
-                    break
+                    result = "Local broadcast"
+                    return result
                 elif (b1 == 0) and (b2 == 0) and (b3 == 0) and (b4 == 0):
-                    print("Unassigned")
-                    break
+                    result = "Unassigned"
+                    return result
                 else:
-                    print("Unused")
-                    break
+                    result = "Unused"
+                    return result
 
 
 # Task_6.3
@@ -85,9 +82,21 @@ def zd6_3_access_trunk():
                 print(' {}'.format(command))
 
 
-print("---------------------------------------TASK-6.1---------------------------------------")
-zd6_1_mac(['aabb:cc80:7000', 'aabb:dd80:7340', 'aabb:ee80:7000', 'aabb:ff80:7000'])
-print("\n---------------------------------------TASK-6.2---------------------------------------")
-zd6_2_ip()
-print("\n---------------------------------------TASK-6.3---------------------------------------")
-zd6_3_access_trunk()
+def main():
+    # print("---------------------------------------TASK-6.1---------------------------------------")
+    # mac_address = ['aabb:cc80:7000', 'aabb:dd80:7340', 'aabb:ee80:7000', 'aabb:ff80:7000']
+    # print("Inserted string: ", mac_address)
+    # transformed_mac = zd6_1_mac(mac_address)
+    # print("New string: ", transformed_mac)
+    # print("\n---------------------------------------TASK-6.2---------------------------------------")
+    # ip = input("Введите IP-адрес в формате 10.0.1.1: ")
+    # result = zd6_2_ip(ip)
+    # if not result:
+    #     print("Wrong IP-address")
+    # else:
+    #     print("Введённый IP: ", ip, "\n" + result)
+    print("\n---------------------------------------TASK-6.3---------------------------------------")
+    zd6_3_access_trunk()
+
+
+main()
