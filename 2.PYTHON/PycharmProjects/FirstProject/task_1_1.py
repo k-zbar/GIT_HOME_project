@@ -48,3 +48,5 @@ for i in range(0, len(kmb)):
         print(''.join(random.sample(sp, int(kmb[i + 1]))), end='')
     elif kmb[i] == 'A':
         print(''.join(random.sample(bg, int(kmb[i + 1]))), end='')
+
+

@@ -31,7 +31,7 @@ def zd1_most_ip(file_name, md, reg_str):
                 else:
                     print('Error!!! Try another one')
                     continue
-            except:
+            except ValueError:
                 print('Error!!! Try another one')
         for i in dict_res:                                                  # Output the number of IPs
             if kol > 0:
